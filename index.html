@@ -1,53 +1,273 @@
 <!DOCTYPE html>
-<html lang="ch-ZN">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .box {
-            width: 500px;
-            margin: 50px auto 0;
-        }
-        #myModal{
-            position:fixed;
-            top:0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,.3);;
-        }
-        .modal{
-            width: 500px;
-            margin: 50px auto 0;
-            background: #fff;
-        }
-        .close-box {
-            overflow: hidden;
-        }
-        .close{
-            float: right;
-            height: 20px;
-        }
-        .hidden{
-            display: none;
-        }
-
-        [border="1"]{
-            cursor: default;
-        }
-
-    </style>
+    <title>晨雨商城 - 晨雨CC9、晨雨MIX 3、Redmi K20，晨雨电视官方网站</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
 </head>
 <body>
+<!--顶部栏-->
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-nav">
+            <a href="https://www.mi.com/index.html">晨雨商城</a><span class="sep">|</span>
+            <a target="_blank" href="https://www.miui.com/">MIUI</a><span class="sep">|</span>
+            <a target="_blank" href="https://iot.mi.com/index.html">IoT</a><span class="sep">|</span>
+            <a target="_blank" href="https://i.mi.com/">云服务</a><span class="sep">|</span>
+            <a target="_blank" href="https://jr.mi.com/index.html?from=micom&t=1565095814035">金融</a><span class="sep">|</span>
+            <a target="_blank" href="https://www.xiaomiyoupin.com/">有品</a><span class="sep">|</span>
+            <a target="_blank" href="https://xiaoai.mi.com/">小爱开放平台</a><span class="sep">|</span>
+            <a target="_blank" href="https://qiye.mi.com/">企业团购</a><span class="sep">|</span>
+            <a target="_blank" href="https://www.mi.com/aptitude/list/?id=41">资质证照</a><span class="sep">|</span>
+            <a target="_blank" href="https://www.mi.com/aptitude/list/">协议规则</a><span class="sep">|</span>
+            <a id="xiazai" target="_blank" href="https://www.mi.com/appdownload/" class="topbar-download">下载app
+                <span class="appcode"><img src="image/下载APP.png" alt="晨雨商城" width="90" height="90">晨雨商城APP</span>
+            </a><span class="sep">|</span>
+            <a href="javascript:void(0);">Select Region</a>
+        </div>
 
-<h1 style="color:red">这是晨雨的网站<h1/>
-<hr/>
-<h2 style="color:blue">下面是网站的内容：<h2/>
-<br/>
-<h3 style="color:green">小胖是头猪<h3/>
+        <div class="topbar-cart">
+            <a class="cart-mini" href="https://static.mi.com/cart/"><i class="iconfont">&#xe600;</i>购物车 (0)</a>
+        </div>
+
+        <div class="topbar-info">
+            <a href="https://account.xiaomi.com/pass/serviceLogin?callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&sid=mi_eshop&_bannerBiz=mistore&_qrsize=180">登录</a><span
+                class="sep">|</span>
+            <a href="https://account.xiaomi.com/pass/register">注册</a><span class="sep">|</span>
+            <a href="https://account.xiaomi.com/pass/serviceLogin?callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Forder.mi.com%252Fmessage%252Flist%26sign%3DMjEyY2NkOTg5NjAzZmMyNWUyMDBhNzE2MDczNWJkYzFkMTg1Yjc0MQ%2C%2C&sid=mi_eshop&_bannerBiz=mistore&_qrsize=180">消息通知</a><span
+                class="sep"></span>
+        </div>
+    </div>
+</div>
+
+<!--头部栏-->
+<div class="site-header">
+    <div class="container">
+        <div class="header-logo">
+<!--            <a href="https://www.mi.com/index.html" title="晨雨官网"><img src="image/晨雨logo2.png" alt="无法显示图片" style="height: 55px;"></a>-->
+            <a class="logo ir" href="https://www.mi.com/index.html" title="晨雨官网"></a>
+        </div>
+
+        <div class="header-nav">
+            <ul class="nav-list clearfix">
+                <li class="nav-category">
+                    <div></div>
+                </li>
+                <li class="nav-item"><a class="link" href="javascript: void(0);"><span>晨雨手机</span></a></li>
+                <li class="nav-item"><a class="link" href="javascript: void(0);"><span>Redmi 红米</span></a></li>
+                <li class="nav-item"><a class="link" href="javascript: void(0);"><span>电视</span></a></li>
+                <li class="nav-item"><a class="link" href="javascript: void(0);"><span>笔记本</span></a></li>
+                <li class="nav-item"><a class="link" href="javascript: void(0);"><span>家电</span></a></li>
+                <li class="nav-item"><a class="link" href="javascript: void(0);"><span>路由器</span></a></li>
+                <li class="nav-item"><a class="link" href="javascript: void(0);"><span>智能硬件</span></a></li>
+                <li class="nav-item"><a class="link" href="javascript: void(0);"><span>服务</span></a></li>
+                <li class="nav-item"><a class="link" href="javascript: void(0);"><span>社区</span></a></li>
+            </ul>
+        </div>
+
+        <div class="header-search">
+            <form id="J_searchForm" class="search-form clearfix search-form-focus" action="//search.mi.com/search"
+                  method="get">
+                <input id="search" class="search-text" type="search" name="keyword" autocomplete="off">
+                <input id="submit" type="submit" class="iconfont search-btn" value=&#xe61f;>
+                <div class="search-hot-words" style="display: block;"><a href="https://www.mi.com/mi9/">晨雨9</a><a href="https://www.mi.com/mi9se/">晨雨9 SE</a></div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!--轮播图-->
+<div class="site-lunbotu">
+    <div class="container">
+        <div class="site-category">
+            <ul class="site-category-list clearfix">
+                <li class="category-item"><a class="title" href="javascript: void(0);"><span>手机 电话卡</span><i class="iconfont">&#xe601;</i></a></li>
+                <li class="category-item"><a class="title" href="javascript: void(0);"><span>电视 盒子</span><i class="iconfont">&#xe601;</i></a></li>
+                <li class="category-item"><a class="title" href="javascript: void(0);"><span>笔记本 平板</span><i class="iconfont">&#xe601;</i></a></li>
+                <li class="category-item"><a class="title" href="javascript: void(0);"><span>家电 插线板</span><i class="iconfont">&#xe601;</i></a></li>
+                <li class="category-item"><a class="title" href="javascript: void(0);"><span>出行 穿戴</span><i class="iconfont">&#xe601;</i></a></li>
+                <li class="category-item"><a class="title" href="javascript: void(0);"><span>智能 路由器</span><i class="iconfont">&#xe601;</i></a></li>
+                <li class="category-item"><a class="title" href="javascript: void(0);"><span>电源 配件</span><i class="iconfont">&#xe601;</i></a></li>
+                <li class="category-item"><a class="title" href="javascript: void(0);"><span>健康 儿童</span><i class="iconfont">&#xe601;</i></a></li>
+                <li class="category-item"><a class="title" href="javascript: void(0);"><span>耳机 音响</span><i class="iconfont">&#xe601;</i></a></li>
+                <li class="category-item"><a class="title" href="javascript: void(0);"><span>生活 箱包</span><i class="iconfont">&#xe601;</i></a></li>
+            </ul>
+        </div>
+<!--        左右箭头-->
+        <div id="prev" class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+        <div id="next" class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+<!--        小点点-->
+        <div class="xiaodian">
+            <a class="dian"><i id="d5"  class="iconfont">&#xe609;</i></a>
+            <a class="dian"><i id="d4" class="iconfont">&#xe609;</i></a>
+            <a class="dian"><i id="d3" class="iconfont">&#xe609;</i></a>
+            <a class="dian"><i id="d2" class="iconfont">&#xe609;</i></a>
+            <a class="dian"><i id="d1" class="iconfont">&#xe7f3;</i></a>
+        </div>
+        <div>
+            <a id="lunbotu" href="https://item.mi.com/product/10000178.html"><img src="image/晨雨816.png" alt="无法加载图片" title="点击就送"></a>
+        </div>
+    </div>
+
+</div>
+
+<!--轮播图下面-->
+<div class="site-lunbotuxia">
+    <div class="container">
+        <div class="home-channel-list">
+            <a href="https://www.mi.com/shouhuan4/"><i class="iconfont">&#xe6dc;</i><br>晨雨秒杀</a><span class="line1"></span>
+            <a href="https://www.mi.com/shouhuan4/"><i class="iconfont">&#xe66c;</i><br>企业团购</a><span class="line1"></span>
+            <a href="https://www.mi.com/shouhuan4/"><i class="iconfont">&#xe606;</i><br>F码通道</a>
+            <div class="cut-off"><span class="line2"></span><span class="line2"></span><span class="line2"></span></div>
+            <a href="https://www.mi.com/shouhuan4/"><i class="iconfont">&#xe603;</i><br>米粉卡</a><span class="line1"></span>
+            <a href="https://www.mi.com/shouhuan4/"><i class="iconfont">&#xe605;</i><br>以旧换新</a><span class="line1"></span>
+            <a href="https://www.mi.com/shouhuan4/"><i class="iconfont">&#xe604;</i><br>话费充值</a>
+        </div>
+
+        <div class="home-promo-list">
+            <a class="left" href="https://www.mi.com/redmi7"><img src="image/Redmi7.png" alt="无法打开图片"></a>
+            <a class="center" href="https://www.mi.com/mix3/"><img src="image/晨雨MIX3.png" alt="无法打开图片"></a>
+            <a class="right" href="https://www.mi.com/shouhuan4/"><img src="image/晨雨手环4.png" alt="无法打开图片"></a>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!--中间区域-->
+<div class="site-middle">
+    <div class="container">
+        <img src="image/晨雨官网中间部分.png" alt="无法显示图片">
+    </div>
+</div>
+
+<!--右侧栏-->
+<div class="home-right-bar">
+    <div class="bar-sort1">
+        <a id="APP" href="javascript:void(0);"><i class="iconfont">&#xe617;</i>手机APP
+            <div id="shaoma" class="pop-content"><img src="image/下载APP.png" alt="无法显示图片">
+                    <br>手机扫一扫<br>一分赢好礼
+            </div>
+        </a>
+    </div>
+    <div class="bar-sort2">
+        <a href="https://order.mi.com/portal"><i class="iconfont">&#xe60d;</i>个人中心</a>
+    </div>
+    <div class="bar-sort1">
+        <a href="https://service.order.mi.com/apply/front"><i class="iconfont">&#xe61d;</i>售后服务</a>
+    </div>
+    <div class="bar-sort2">
+        <a href="https://service.order.mi.com/apply/front"><i class="iconfont">&#xe687;</i>人工客服</a>
+    </div>
+    <div class="bar-sort1">
+        <a href="https://static.mi.com/cart/"><i class="iconfont">&#xe600;</i>购物车</a>
+    </div>
+    <div id="ding" class="bar-sort3">
+        <a href="#"><i class="iconfont">&#xe675;</i>回到顶部</a>
+    </div>
+</div>
+
+<!--底部栏-->
+<div class="site-footer">
+<!--    上部分-->
+    <div class="footer-service">
+        <div class="bar-sort1">
+            <a href="javascript:void(0);"><i class="iconfont">&#xe61d;</i>&nbsp;预约维修服务</a>
+        </div>
+        <div class="bar-sort2">
+            <a href="javascript:void(0);"><i class="iconfont">&#xe613;</i>&nbsp;7天无理由退货</a>
+        </div>
+        <div class="bar-sort1">
+            <a href="javascript:void(0);"><i class="iconfont">&#xe608;</i>&nbsp;15天免费换货</a>
+        </div>
+        <div class="bar-sort2">
+            <a href="javascript:void(0);"><i class="iconfont">&#xe66c;</i>&nbsp;满150元包邮</a>
+        </div>
+        <div class="bar-sort1">
+            <a href="javascript:void(0);"><i class="iconfont">&#xe607;</i>&nbsp;520余家售后网点</a>
+        </div>
+    </div>
+
+<!--    下部分-->
+    <div class="footer-links">
+        <dl class="col-links">
+            <dt>帮助中心</dt>
+            <dd><a href="//www.mi.com/service/account/Account%20registration/">账户管理</a></dd>
+            <dd><a href="//www.mi.com/service/buy/SalesTime/">购物指南</a></dd>
+            <dd><a href="//www.mi.com/service/order/sendprogress/">订单操作</a></dd>
+        </dl>
+        <dl class="col-links ">
+            <dt>服务支持</dt>
+            <dd><a href="//www.mi.com/service/exchange">售后政策</a></dd>
+            <dd><a href="//www.mi.com/service/">自助服务</a></dd>
+            <dd><a href="//www.mi.com/c/service/download/">相关下载</a></dd>
+        </dl>
+        <dl class="col-links ">
+            <dt>线下门店</dt>
+            <dd><a href="//www.mi.com/c/xiaomizhijia/">晨雨之家</a></dd>
+            <dd><a href="//www.mi.com/static/maintainlocation/">服务网点</a></dd>
+            <dd><a href="//www.mi.com/static/familyLocation/">授权体验店</a></dd>
+        </dl>
+        <dl class="col-links ">
+            <dt>关于晨雨</dt>
+            <dd><a href="//www.mi.com/about/">了解晨雨</a></dd>
+            <dd><a href="http://hr.xiaomi.com/">加入晨雨</a></dd>
+            <dd><a href="//company.mi.com/zh-cn/ir/indexContent/index.html">投资者关系</a></dd>
+        </dl>
+        <dl class="col-links ">
+            <dt>关注我们</dt>
+            <dd><a href="https://weibo.com/xiaomishangcheng">新浪微博</a></dd>
+            <dd><a href="javascript: void(0);">官方微信</a></dd>
+            <dd><a href="//www.mi.com/about/contact/">联系我们</a></dd>
+        </dl>
+        <dl class="col-links ">
+            <dt>特色服务</dt>
+            <dd><a href="//order.mi.com/queue/f2code" target="_blank">F 码通道</a></dd>
+            <dd><a href="//order.mi.com/giftcode/input/">礼物码</a></dd>
+            <dd><a href="//order.mi.com/service/imei">防伪查询</a></dd>
+        </dl>
+        <div class="col-contact">
+            <p class="phone">400-100-5678</p>
+            <p>
+             周一至周日 8:00-18:00<br>（仅收市话费）
+            </p>
+            <a href="//support.kefu.mi.com/"><i class="iconfont">&#xe6c8;</i> 人工客服</a>
+        </div>
+
+    </div>
+
+</div>
+
+<!--最底部广告-->
+<div class="site-info">
+    <div class="container">
+<!--        上部分-->
+        <div class="info-text">
+            <img src="image/晨雨logo2.png" alt="无法显示图片">
+            <p class="sites"><a href="//www.mi.com/index.html">晨雨商城</a><span class="sep">|</span><a target="_blank" href="https://www.miui.com/">MIUI</a><span class="sep">|</span><a target="_blank" href="https://home.mi.com/index.html">米家</a><span class="sep">|</span><a target="_blank" href="http://www.miliao.com/">米聊</a><span class="sep">|</span><a target="_blank" href="https://www.duokan.com/">多看</a><span class="sep">|</span><a target="_blank" href="http://game.xiaomi.com/">游戏</a><span class="sep">|</span><a target="_blank" href="http://www.miwifi.com/">路由器</a><span class="sep">|</span><a target="_blank" href="//www.mi.com/micard/">米粉卡</a><span class="sep">|</span><a target="_blank" href="https://b.mi.com/?client_id=180100031058&amp;masid=17409.0358">政企服务</a><span class="sep">|</span><a target="_blank" href="https://xiaomi.tmall.com/">晨雨天猫店</a><span class="sep">|</span><a target="_blank" href="//www.mi.com/about/privacy/">隐私政策</a><span class="sep">|</span><a target="_blank" href="//www.mi.com/about/user-agreement/">商城用户协议</a><span class="sep">|</span><a target="_blank" href="//static.account.xiaomi.com/html/agreement/account/cn.html">账号协议</a><span class="sep">|</span><a target="_blank" href="https://static.mi.com/feedback/">问题反馈</a><span class="sep">|</span><a target="_blank" href="//www.mi.com/jiancha/">廉正举报</a><span class="sep">|</span><a target="_blank" href="https://integrity.mi.com/">诚信合规</a><span class="sep">|</span><a target="_blank" href="javascript: void(0);">Select Region</a></p>
+            <p>
+                ©
+                <a href="javascript: void(0);" title="mi.com">mi.com</a> 京ICP证110507号
+                <a href="http://beian.miit.gov.cn/">京ICP备10046444号</a> <a rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134" target="_blank">京公网安备11010802020134号 </a> <a href="//www.mi.com/culture-license/" target="_blank">京网文[2017]1530-131号</a> <br> <a href="//www.mi.com/medical/record/" target="_blank">（京）网械平台备字（2018）第00005号
+                </a> <a href="//www.mi.com/medical/qualification/">互联网药品信息服务资格证 (京) -非经营性-2014-0090
+                </a> <a href="//www.mi.com/business-license/" target="_blank">营业执照</a> <a href="//www.mi.com/medical/list/" target="_blank">医疗器械公告</a> <br> <a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/af5b8ef38e7d57c5ee7fa4289ccf4df8.png" target="_blank">增值电信业务许可证</a>&nbsp;
+                网络食品经营备案（京）【2018】WLSPJYBAHF-12  &nbsp;
+                <a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe7383e11127caea371f17156f429a1e.png" target="_blank">食品经营许可证</a> <br>违法和不良信息举报电话：185-0130-1238 <a href="https://www.mi.com/static/intellectual/index.html" target="_blank">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+            </p>
+        </div>
+<!--        下部分-->
+        <div class="info-links"><a target="_blank" href="//privacy.truste.com/privacy-seal/validation?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&amp;lang=zh-cn"><img src="//i1.mifile.cn/f/i/17/site/truste.png" alt="TRUSTe Privacy Certification"></a> <a target="_blank" href="//search.szfw.org/cert/l/CX20120926001783002010"><img src="//s01.mifile.cn/i/v-logo-2.png" alt="诚信网站"></a> <a target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082"><img src="//s01.mifile.cn/i/v-logo-1.png" alt="可信网站"></a> <a target="_blank" href="http://www.315online.com.cn/member/315140007.html"><img src="//s01.mifile.cn/i/v-logo-3.png" alt="网上交易保障中心"></a> <a target="_blank" href="https://www.mi.com/service/buy/commitment/"><img rel="nofollow" src="//i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="诚信经营 放心消费"></a></div>
+        <div class="slogan ir"></div>
+    </div>
+
+</div>
+
+<script src="js/js.js">
+</script>
 
 </body>
 </html>
