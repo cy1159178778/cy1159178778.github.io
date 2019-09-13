@@ -11,10 +11,10 @@ a:hover {
 .home-right-bar {
     position: fixed;
     width: 84px;
-    height: 562px;
+    height: 82px;
     bottom: 70px;
     right: 0;
-    top: 100px;
+    top: 350px;
     text-align: center;
     /*background-color: #FFFFFF;*/
     z-index: 999999
