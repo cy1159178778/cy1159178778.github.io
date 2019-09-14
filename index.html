@@ -126,11 +126,7 @@
     <!--    <span><a class="icon-instagram" href="http://instagram.com/yasaisai" target="_blank" data-icon=""></a></span>-->
     <!--    <span><a class="icon-twitter" href="https://twitter.com/yasai_wang" target="_blank" data-icon=""></a></span>-->
     <!--  </div>-->
-
-    <!--空白-->
-<!--     <div style="height: 3350px"> -->
-<!--         <h2 style="color: red">期待下次更新......</h2> -->
-<!--     </div> -->
+    
 </div>
 
 <!--右侧栏-->
@@ -159,6 +155,7 @@
     </div>
 </div>
 
+<script src="js/jquery.js"></script>
 <script src="js/index.js"></script>
 <script type="text/javascript">
 
@@ -258,6 +255,13 @@
 </script>
 
 <script type="text/javascript" src="js/sketch.js"></script>
+<script>
+    setTimeout(function () {
+        // console.log($('#defaultCanvas0').height());
+        let h = $('#defaultCanvas0').height()+'px';
+        $('#credits').append('<div style="height: 3000px"><h2 style="color: red;margin-top: '+h+'">期待下次更新......</h2></div>');
+    }, 1000);
+</script>
 </body>
 
 </html>
