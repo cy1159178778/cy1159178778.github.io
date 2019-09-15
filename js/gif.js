@@ -338,7 +338,7 @@
                             frame.image = image
                         }
                     } else {
-                        throw new Error("Invalid image")
+                        throw new Error("Invalid images")
                     }
                     return this.frames.push(frame)
                 };
@@ -456,7 +456,7 @@
                             }
                         }
                     }
-                    image = new Blob([data], {type: "image/gif"});
+                    image = new Blob([data], {type: "images/gif"});
                     return this.emit("finished", image, data)
                 };
                 GIF.prototype.renderNextFrame = function () {
