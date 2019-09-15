@@ -1,268 +1,819 @@
 <!DOCTYPE html>
-<html lang="ch-ZN">
+<html lang="zh-CN">
 <head>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="bookmark" href="images/favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>晨雨的网站</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="renderer" content="webkit"><!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#131D28">
+    <title> 晨雨的网站</title>
+    <meta content="晨雨的网站" name="description">
+    <meta content="晨雨的网站" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/base.css">
-    <!--    <link href="/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
-    <!--  <link rel="stylesheet" type="text/css" href="fonts.css">-->
-    <script type="text/javascript" src="js/dat.gui.min.js"></script>
-    <script type="text/javascript" src="js/p5.min.js"></script>
-    <script type="text/javascript" src="js/gif.js"></script>
-    <script type="text/javascript" src="js/p5.dom.min.js"></script>
+    <link rel='stylesheet' id='abc_style-css' href='css/style.css?ver=17.8'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='bootstrap-style-css' href='css/bootstrap.css?ver=1.0.1'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='fontawesome-style-css' href='font-awesome/css/font-awesome.min.css' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='mystyle-css' href='css/myblog.css?ver=1.0.25'
+          type='text/css' media='all'/>
+    <script type='text/javascript' src='js/jquery1124.js?ver=1.12.4'></script>
+    <script type='text/javascript'
+            src='js/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript'
+            src='js/jquery.cookie.js?ver=17.8'></script>
+    <script type='text/javascript' src='js/script.js?ver=17.8'></script>
+    <script type='text/javascript' src='js/bootstrap.js?ver=1.0.1'></script>
+    <script type='text/javascript' src='js/jquery.icheck.js?ver=1.0.1'></script>
+    <script type='text/javascript' src='js/jquery.validate.js?ver=1.9.0'></script>
+    <script type='text/javascript' src='js/jquery.lazyload.min.js?ver=1.9.3'></script>
+    <script type='text/javascript' src='js/myblog.js?ver=2.0.2'></script>
+    <script type='text/javascript'>/* <![CDATA[ */
+    var favorites_data = {
+        "ajaxurl": "https:\/\/www.mmgal.com\/wp-admin\/admin-ajax.php",
+        "nonce": "e3a8ebc89f",
+        "favorite": "\u6536\u85cf\u6587\u7ae0 <i class=\"sf-icon-star-empty\"><\/i>",
+        "favorited": "\u53d6\u6d88\u6536\u85cf <i class=\"sf-icon-star-full\"><\/i>",
+        "includecount": "1",
+        "indicate_loading": "",
+        "loading_text": "Loading",
+        // "loading_image": "<img src=\"\/wp-content\/plugins\/favorites\/assets\/images\/loading.gif\" class=\"simplefavorites-loading\" aria-hidden=\"true\" \/>",
+        // "loading_image_active": "<img src=\"\/wp-content\/plugins\/favorites\/assets\/images\/loading.gif\" class=\"simplefavorites-loading\" aria-hidden=\"true\" \/>",
+        "loading_image_preload": "",
+        "cache_enabled": "1",
+        "button_options": {
+            "button_type": "custom",
+            "custom_colors": false,
+            "box_shadow": false,
+            "include_count": true,
+            "default": {
+                "background_default": false,
+                "border_default": false,
+                "text_default": false,
+                "icon_default": false,
+                "count_default": false
+            },
+            "active": {
+                "background_active": false,
+                "border_active": false,
+                "text_active": false,
+                "icon_active": false,
+                "count_active": false
+            }
+        },
+        "authentication_modal_content": "<p>Please login to add favorites.<\/p><p><a href=\"#\" data-favorites-modal-close>Dismiss this notice<\/a><\/p>",
+        "authentication_redirect": "",
+        "dev_mode": "",
+        "logged_in": "",
+        "user_id": "0",
+        "authentication_redirect_url": "https:\/\/www.mmgal.com\/wp-login.php"
+    };/* ]]> */</script>
+    <script type='text/javascript' src='js/favorites.min.js?ver=2.3.0'></script>
+<!--    <link rel="canonical" href="https://www.mmgal.com/"/>&lt;!&ndash; Content Protector plugin v. 2.11 CSS &ndash;&gt;-->
+    <style type="text/css"> div.content-protector-access-form {
+        padding: 0;
+        border-style: dashed;
+        border-color: #6b69d6;
+        border-width: 2px;
+        border-radius: 5px;
+    }
 
+    input.content-protector-form-submit {
+        color: #ffffff;
+        background-color: #db3636;
+    }
 
-    <input id="img-path" type="file"/>
+    div.content-protector-correct-password {
+        font-weight: 400;
+    }
 
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
+    div.content-protector-incorrect-password {
+        color: #e81414;
+        font-weight: 700;
+    }
+
+    div.content-protector-ajaxLoading {
+        font-weight: 400;
+    }
+
+    div.content-protector-form-instructions {
+        font-weight: 700;
+    }</style> <!-- Content Protector plugin v. 2.11 Additional CSS -->
+    <style type="text/css"> /* These styles will be applied to the Content Protector access form whose identifier is &quot;pass&quot;. */
+    #content-protector-access-form-pass { /* CSS styles for the entire form */
+    }
+
+    #content-protector-form-instructions-pass { /* CSS styles for the form instructions */
+    }
+
+    #content-protector-correct-password-pass { /* CSS styles for the message when the correct password is entered */
+    }
+
+    #content-protector-incorrect-password-pass { /* CSS styles for the error message for an incorrect password */
+    }
+
+    input.content-protector-form-submit {
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    #content-protector-captcha-img-pass {
+        margin: 0;
+    } </style>
+    <style type="text/css">.cb-slideshow li:nth-child(1) span {
+        background-image: url(images/E0AA4946.jpg);
+    }
+
+    .cb-slideshow li:nth-child(2) span {
+        background-image: url(images/3E2A1078.jpg);
+    }
+
+    .cb-slideshow li:nth-child(3) span {
+        background-image: url(images/220CB69A.jpg);
+    }
+
+    .cb-slideshow li:nth-child(4) span {
+        background-image: url(images/5ABA08D2.jpg);
+    }
+
+    .cb-slideshow li:nth-child(5) span {
+        background-image: url(images/FEEDBFAA.jpg);
+    }
+
+    .cb-slideshow li:nth-child(6) span {
+        background-image: url(images/C5E0807B.jpg);
+    }
+
+    @media (min-width: 767px) {
+        .large {
+            background: url('images/亚丝娜2.jpg') no-repeat;
         }
-
-        #credits {
-            font-size: 12px;
-            position: absolute;
-            /*bottom: -25px;*/
-            /*right: 15px;*/
-            /*opacity: 0.6;*/
-            color: #ffffff;
-            max-width: 70%;
-            /*text-align: right;*/
-            /*line-height: 20px;*/
-        }
-
-
-        .logo {
-            font-size: 12px;
-            position: absolute;
-            bottom: 80px;
-            left: 25px;
-            color: #ffffff;
-            max-width: 70%;
-            line-height: 20px;
-            opacity: 0.7;
-        }
-
-        .iconlink {
-            bottom: 50px;
-            margin-right: 0;
-        }
-
-        #img-path {
-            display: none;
-        }
-
-        .progress-box {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .progress-bar {
-            height: 3px;
-            width: 0;
-            background-color: #e61d5f;
-        }
-
-        .save-gif-tip {
-            display: none;
-            margin-bottom: 5px;
-            text-align: center;
-            font-size: 16px;
-            color: white;
-        }
-
-        a {
-            /*text-decoration: none;*/
-            color: #FFFFFF;
-        }
-
-        a:hover {
-            color: green;
-        }
-    </style>
-
-    <script>
-        var _hmt = _hmt || [];
+    }</style>
+</head>
+<body class="home blog" ondragstart="return false">
+<section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>好好</span></li>
+        <li><span>学习</span></li>
+        <li><span>，</span></li>
+        <li><span>天天</span></li>
+        <li><span>向上</span></li>
+        <li><span>。</span></li>
+    </ul>
+</section>
+<div class="GalMenu GalDropDown">
+    <div class="circle" id="gal">
+        <div class="ring"><a title="" class="menuItem">首页</a> <a
+                title="" class="menuItem">下一页</a> <a
+                title="" class="menuItem">留言版</a> <a
+                class="menuItem">首页</a> <a
+                title="" class="menuItem">更新日志</a> <a
+                title="" class="menuItem">上一页</a></div>
+        <audio id="audio" src="audio/欧尼酱%20最喜欢你了.mp3"></audio>
+    </div>
+</div>
+<div id="overlay" class="magnify">
+    <div class="large"></div>
+    <img class="small" src="images/rpic.png" width="1920"></div>
+<header id="zan-header" class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header"><a href="">
+            <div class="navbar-brand"></div>
+        </a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span
+                    class="fa fa-reorder fa-lg"></span></button>
+        </div>
+        <div class="navbar-collapse bs-navbar-collapse collapse">
+            <ul id="menu-caidan" class="nav navbar-nav">
+                <li id="menu-item-43"
+                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-43">
+                    <a href="javascript:void(0);"><i class="fa fa-home"></i>首页</a></li>
+                <li id="menu-item-5731"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5731">
+                    <a><i class="fa fa-star"></i>点我点我</a>
+                    <ul class="dropdown-menu">
+                        <li id="menu-item-1"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1">
+                            <a>要看点什么吗</a>
+                            <ul class="dropdown-menu">
+                                <li id="menu-item-11"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a
+                                        href="http://anime.upupoo.com/">看动漫</a>
+                                </li>
+                                <li id="menu-item-12"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12"><a
+                                        href="http://4kbo.com/">看电影</a>
+                                </li>
+                                <li id="menu-item-13"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13"><a
+                                        href="https://www.bxwxorg.com/">看小说</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-2"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2">
+                            <a>要搜点什么吗</a>
+                            <ul class="dropdown-menu">
+                                <li id="menu-item-21"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21"><a
+                                        href="https://wall.alphacoders.com/?lang=Chinese">搜壁纸</a>
+                                </li>
+                                <li id="menu-item-22"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a
+                                        href="http://www.ypojie.com/">搜软件</a>
+                                </li>
+                                <li id="menu-item-23"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a
+                                        href="https://www.doutula.com/article/list/">搜表情包</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-3"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3">
+                            <a>要玩点什么吗</a>
+                            <ul class="dropdown-menu">
+                                <li id="menu-item-31"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31"><a
+                                        href="http://www.4399.com/">玩网页游戏</a>
+                                </li>
+                                <li id="menu-item-32"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32"><a
+                                        href="https://store.steampowered.com/">玩网络游戏</a>
+                                </li>
+                                <li id="menu-item-33"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33"><a
+                                        href="http://www.doyo.cn/">玩单机游戏</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-4"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4">
+                            <a>要学点什么吗</a>
+                            <ul class="dropdown-menu">
+                                <li id="menu-item-41"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-41"><a
+                                        href="https://www.runoob.com/">学编程</a>
+                                </li>
+                                <li id="menu-item-42"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a
+                                        href="https://leetcode-cn.com/problemset/all/">刷力扣</a>
+                                </li>
+                                <li id="menu-item-433"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-433"><a
+                                        href="https://www.ren3.cn/">学PS</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-2359" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2359">
+                    <a><i class="fa fa-book"></i>本站必读</a></li>
+                <li id="menu-item-5708" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5708">
+                    <a><i class="fa fa-book"></i>其他说明</a></li>
+                <li id="menu-item-5745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5745">
+                    <a><i class="fa fa-heart"></i>收藏夹</a></li>
+                <li id="menu-item-16867"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16867">
+                    <a><i class="fa fa-cogs fa-spin"></i>主题切换</a>
+                    <ul class="dropdown-menu">
+                        <li id="menu-item-16868"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16868"><a
+                                href="">默认主题</a></li>
+                        <li id="menu-item-16869"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16869"><a
+                        >去特效版</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-18588"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18588"><a target="_blank"
+                                                                                                       href="https://www.mmgal.com/music/"><i
+                        class="fa fa-music"></i>音乐阁</a></li>
+                <li id="menu-item-316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-316"><a
+                ><i class="fa fa-comments"></i>留言板</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+</body>
+<div id="zan-bodyer">
+    <div class="container">
+        <div class="row">
+            <div id="mainstay" class="col-md-8"> <!-- 公告 -->
+                <div class="well mybody2">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    官方Q群：888888888<br><br><b>本网站仅供学习使用，不涉及商业用途<br><br>浏览网站卡顿请使用官方Chrome浏览器或切换主题<br><br>
+                    <font color="red">喜欢本站记得收藏链接哦ヾ(✿ﾟ▽ﾟ)ノ</font></b></div>
+                <!-- 公告结束 --> <!-- 内容主体 -->
+                <div id="article-list">
+                    <div class="article well clearfix mybody3" aos="flip-up"><i
+                            class="fa fa-bookmark article-stick visible-md visible-lg"></i>
+                        <div class="data-article hidden-xs"><span class="month">9月</span> <span class="day">15</span>
+                        </div> <!-- 大型设备文章属性 -->
+                        <section class="hidden-xs">
+                            <div class="title-article"><h1><a target="_blank"><span
+                                    class="animated_h1">关于站长的一则公告</span><br><span
+                                    class="label label-info" style="font-size:13px;"></span></a></h1></div>
+                            <div class="tag-article"><span class="label label-zan"><i
+                                    class="fa fa-eye"></i> 599,195 ℃</span> <span class="label label-zan"><i
+                                    class="fa fa-comments"></i> <a>1,466</a></span>
+                            </div>
+                            <div class="alert alert-zan mybody3">
+                                <p style="text-align: center;"><a target="_blank">
+                                    <div class="ih-item square effect bottom_to_top">
+                                        <div class="img"><img
+                                                src="images/黄漫老师2.jpg"
+                                                alt="关于站长的一则公告"/></div>
+                                        <div class="info">
+                                <p>
+                                    本站创建于2019年9月15日，具体说明还没想好，所以此处省略一万字......</p>
+                            </div>
+                    </div>
+                    </a> </p> </div>
+                </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
+                <!-- 小型设备文章属性结束 --></div>
+            <div class="article well clearfix mybody3" aos="flip-up"><i
+                    class="fa fa-bookmark article-stick visible-md visible-lg"></i>
+                <div class="data-article hidden-xs"><span class="month">1月</span> <span class="day">01</span></div>
+                <!-- 大型设备文章属性 -->
+                <section class="hidden-xs">
+                    <div class="title-article"><h1><a
+                            target="_blank"><span class="animated_h1">详细更新日志</span><br><span
+                            class="label label-info" style="font-size:13px;"></span></a></h1></div>
+                    <div class="tag-article"><span class="label label-zan"><i class="fa fa-eye"></i> 211,761 ℃</span>
+                        <span class="label label-zan"><i class="fa fa-comments"></i> <a>815</a></span></div>
+                    <div class="alert alert-zan mybody3">
+                        <p style="text-align: center;"><a target="_blank">
+                            <div class="ih-item square effect bottom_to_top">
+                                <div class="img"><img
+                                        src="images/穹妹.jpeg"
+                                        alt="详细更新日志"/></div>
+                                <div class="info">
+                        <p>暂无内容......</p></div>
+            </div>
+            </a> </p> </div>
+        </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
+        <!-- 小型设备文章属性结束 --></div>
+    <div class="article well clearfix mybody3" aos="flip-up">
+        <div class="data-article hidden-xs"><span class="month">9月</span> <span class="day">08</span></div>
+        <!-- 大型设备文章属性 -->
+        <section class="hidden-xs">
+            <div class="title-article"><h1><a target="_blank"><span
+                    class="animated_h1">暂无标题</span><br><span class="label label-info"
+                                                             style="font-size:13px;"></span></a></h1>
+            </div>
+            <div class="tag-article"><span class="label label-zan"><i class="fa fa-tags"></i> <a rel="tag">无</a></span>
+                <span
+                        class="label label-zan"><i class="fa fa-eye"></i> 19,940 ℃</span> <span class="label label-zan"><i
+                        class="fa fa-comments"></i> <a>49</a></span></div>
+            <div class="alert alert-zan mybody3">
+                <p style="text-align: center;"><a target="_blank">
+                    <div class="ih-item square effect bottom_to_top">
+                        <div class="img"><img src="images/桔梗.jpg"
+                                              alt="暂无标题"/></div>
+                        <div class="info">
+                <p>暂无内容......</p>
+            </div>
+    </div>
+    </a> </p> </div>
+</section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
+<!-- 小型设备文章属性结束 --></div>
+<div class="article well clearfix mybody3" aos="flip-up">
+    <div class="data-article hidden-xs"><span class="month">9月</span> <span class="day">08</span></div><!-- 大型设备文章属性 -->
+    <section class="hidden-xs">
+        <div class="title-article"><h1><a target="_blank"><span
+                class="animated_h1">暂无标题</span><br><span class="label label-info"
+                                                         style="font-size:13px;"></span></a></h1>
+        </div>
+        <div class="tag-article"><span class="label label-zan"><i class="fa fa-tags"></i> <a rel="tag">无</a></span>
+            <span
+                    class="label label-zan"><i class="fa fa-eye"></i> 14,636 ℃</span> <span class="label label-zan"><i
+                    class="fa fa-comments"></i> <a>23</a></span></div>
+        <div class="alert alert-zan mybody3">
+            <p style="text-align: center;"><a target="_blank">
+                <div class="ih-item square effect bottom_to_top">
+                    <div class="img"><img src="images/御坂美琴.jpg"
+                                          alt="暂无标题"/></div>
+                    <div class="info">
+            <p>暂无内容......</p>
+        </div>
+</div>
+</a> </p> </div> </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
+<!-- 小型设备文章属性结束 --></div>
+<div class="article well clearfix mybody3" aos="flip-up">
+    <div class="data-article hidden-xs"><span class="month">7月</span> <span class="day">20</span></div><!-- 大型设备文章属性 -->
+    <section class="hidden-xs">
+        <div class="title-article"><h1><a target="_blank"><span class="animated_h1">暂无标题</span><br><span
+                class="label label-info" style="font-size:13px;"></span></a></h1></div>
+        <div class="tag-article"><span class="label label-zan"><i class="fa fa-tags"></i> <a
+                rel="tag">无</a>, <a
+                rel="tag">无</a>, <a
+                rel="tag">无</a></span> <span
+                class="label label-zan"><i class="fa fa-eye"></i> 200,586 ℃</span> <span class="label label-zan"><i
+                class="fa fa-comments"></i> <a>173</a></span></div>
+        <div class="alert alert-zan mybody3">
+            <p style="text-align: center;"><a target="_blank">
+                <div class="ih-item square effect bottom_to_top">
+                    <div class="img"><img src="images/佐天泪子.jpeg"
+                                          alt="暂无标题"/></div>
+                    <div class="info">
+            <p>暂无内容......</p>
+        </div>
+</div>
+</a> </p> </div> </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
+<!-- 小型设备文章属性结束 --></div>
+<div class="article well clearfix mybody3" aos="flip-up">
+    <div class="data-article hidden-xs"><span class="month">7月</span> <span class="day">20</span></div><!-- 大型设备文章属性 -->
+    <section class="hidden-xs">
+        <div class="title-article"><h1><a target="_blank"><span class="animated_h1">暂无标题</span><br><span
+                class="label label-info" style="font-size:13px;"></span></a></h1></div>
+        <div class="tag-article"><span class="label label-zan"><i class="fa fa-tags"></i> <a
+                rel="tag">无</a>, <a
+                rel="tag">无</a></span> <span
+                class="label label-zan"><i class="fa fa-eye"></i> 147,968 ℃</span> <span class="label label-zan"><i
+                class="fa fa-comments"></i> <a>153</a></span>
+        </div>
+        <div class="alert alert-zan mybody3">
+            <p style="text-align: center;"><a target="_blank">
+                <div class="ih-item square effect bottom_to_top">
+                    <div class="img"><img src="images/十香.jpeg"
+                                          alt="暂无标题"/></div>
+                    <div class="info">
+            <p>暂无内容......</p>
+        </div>
+</div>
+</a> </p> </div> </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
+<!-- 小型设备文章属性结束 --></div>
+<div class="article well clearfix mybody3" aos="flip-up">
+    <div class="data-article hidden-xs"><span class="month">5月</span> <span class="day">26</span></div><!-- 大型设备文章属性 -->
+    <section class="hidden-xs">
+        <div class="title-article"><h1><a target="_blank"><span class="animated_h1">暂无标题</span><br><span
+                class="label label-info" style="font-size:13px;"></span></a></h1></div>
+        <div class="tag-article"><span class="label label-zan"><i class="fa fa-tags"></i> <a rel="tag">无</a></span>
+            <span
+                    class="label label-zan"><i class="fa fa-eye"></i> 130,083 ℃</span> <span class="label label-zan"><i
+                    class="fa fa-comments"></i> <a>67</a></span></div>
+        <div class="alert alert-zan mybody3">
+            <p style="text-align: center;"><a target="_blank">
+                <div class="ih-item square effect bottom_to_top">
+                    <div class="img"><img src="images/亚丝娜.jpeg"
+                                          alt="暂无标题"/></div>
+                    <div class="info">
+            <p>暂无内容......</p>
+        </div>
+</div>
+</a> </p> </div> </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
+<!-- 小型设备文章属性结束 --></div>
+<div class="article well clearfix mybody3" aos="flip-up">
+    <div class="data-article hidden-xs"><span class="month">5月</span> <span class="day">02</span></div><!-- 大型设备文章属性 -->
+    <section class="hidden-xs">
+        <div class="title-article"><h1><a target="_blank"><span
+                class="animated_h1">暂无标题</span><br><span class="label label-info" style="font-size:13px;"></span></a>
+        </h1></div>
+        <div class="tag-article"><span class="label label-zan"><i class="fa fa-tags"></i> <a
+                rel="tag">无</a>, <a
+                rel="tag">无</a></span> <span
+                class="label label-zan"><i class="fa fa-eye"></i> 63,977 ℃</span> <span class="label label-zan"><i
+                class="fa fa-comments"></i> <a>56</a></span>
+        </div>
+        <div class="alert alert-zan mybody3">
+            <p style="text-align: center;"><a target="_blank">
+                <div class="ih-item square effect bottom_to_top">
+                    <div class="img"><img src="images/狂三.jpeg"
+                                          alt="暂无标题"/></div>
+                    <div class="info">
+            <p>暂无内容......</p>
+        </div>
+</div>
+</a> </p> </div> </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
+<!-- 小型设备文章属性结束 --></div>
+<div class="article well clearfix mybody3" aos="flip-up">
+    <div class="data-article hidden-xs"><span class="month">5月</span> <span class="day">02</span></div><!-- 大型设备文章属性 -->
+    <section class="hidden-xs">
+        <div class="title-article"><h1><a target="_blank"><span class="animated_h1">暂无标题</span><br><span
+                class="label label-info" style="font-size:13px;"></span></a></h1></div>
+        <div class="tag-article"><span class="label label-zan"><i class="fa fa-tags"></i> <a
+                rel="tag">无</a>, <a
+                rel="tag">无</a></span> <span
+                class="label label-zan"><i class="fa fa-eye"></i> 44,795 ℃</span> <span class="label label-zan"><i
+                class="fa fa-comments"></i> <a>23</a></span></div>
+        <div class="alert alert-zan mybody3">
+            <p style="text-align: center;"><a target="_blank">
+                <div class="ih-item square effect bottom_to_top">
+                    <div class="img"><img src="images/黑雪姬.jpg"
+                                          alt="暂无标题"/></div>
+                    <div class="info">
+            <p>暂无内容......</p>
+        </div>
+</div>
+</a> </p> </div> </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
+<!-- 小型设备文章属性结束 --></div> </div> <!-- 内容主体结束 --> <!-- 分页 -->
+<div id="zan-page" class="clearfix">
+    <ul class="pagination pagination-zan pull-right">
+        <li></li>
+        <li class='active'><span>1</span></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+        <li><a>4</a></li>
+        <li><a>5</a></li>
+        <li><a>6</a></li>
+        <li><a>7</a></li>
+        <li><span>...</span></li>
+        <li><a>99</a></li>
+        <li><a>&raquo;</a></li>
+    </ul>
+</div> <!-- 分页结束 --> </div>
+<aside class="col-md-4" id="sidebar">
+    <aside id="zan_search-7">
+        <div class="search" aos="fade-up" aos-duration="2000">
+            <form class="form-inline clearfix" method="get" id="searchform" action=""><input
+                    class="form-control" type="text" name="s" id="s" placeholder="搜索..."/>
+                <button type="button" class="btn btn-danger btn-small" name="submit"><i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </aside>
+    <aside id="zan_login-5">
+        <div class="panel panel-zan" aos="flip-right" aos-duration="3000">
+            <div class="panel-heading">请登录</div>
+            <form class="login-form clearfix" action="" method="post">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                        <input class="form-control" type="text" name="log" id="log" value="" size="20"/></div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                        <input class="form-control" type="password" name="pwd" id="pwd" size="20"/></div>
+                </div>
+                <p><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"/>
+                    记住我的登录信息</label><a title=" Password Lost and Found"
+                                       style="color: #3d4450;float:right;font-weight:bold;padding:2px;">忘记密码？</a></p>
+                <button class="btn btn-inverse-primary pull-left" type="button" name="submit">登录</button>
+                <a class="btn btn-inverse-primary pull-right">注册</a>
+            </form>
+        </div>
+    </aside>
+    <aside id="zan_custom-3">
+        <div class="panel panel-zan" aos="fade-up" aos-duration="2000">
+            <div class="panel-heading">近期更新记录</div>
+            <div class="panel-body custom">暂无</div>
+        </div>
+    </aside>
+    <aside id="zan_latest_comments-8">
+        <div class="panel panel2 panel-zan" aos="fade-up" aos-duration="2000">
+            <div class="panel-heading"><i class="fa fa-comments"></i> 最新评论 <i
+                    class="fa fa-times-circle panel-remove"></i> <i class="fa fa-chevron-circle-up panel-toggle"></i>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span class="author-avatar"><img
+                        src="images/none.jpg" width="40" height="40" alt="头像"
+                        class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default"/></span> <a
+                        class="hint--left hint--rounded" data-hint2="无"> <span
+                        class="comment-log"> 中秋节快乐qwq </span> </a></li>
+                <li class="list-group-item"><span class="author-avatar"><img
+                        src="images/none.jpg" width="40" height="25" alt="头像"
+                        class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 alignnone photo"/></span> <a
+                        class="hint--left hint--rounded" data-hint2="无"> <span
+                        class="comment-log"> 中秋节快乐qwq </span> </a></li>
+                <li class="list-group-item"><span class="author-avatar"><img
+                        src="images/none.jpg" width="40" height="40" alt="头像"
+                        class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 alignnone photo"/></span> <a
+                        class="hint--left hint--rounded" data-hint2="无"> <span class="comment-log"> 中秋节快乐qwq </span>
+                </a></li>
+                <li class="list-group-item"><span class="author-avatar"><img
+                        src="images/none.jpg" width="40" height="40" alt="头像"
+                        class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default"/></span> <a
+                        class="hint--left hint--rounded" data-hint2="无"> <span
+                        class="comment-log"> 中秋节快乐qwq </span> </a></li>
+                <li class="list-group-item"><span class="author-avatar"><img
+                        src="images/none.jpg" width="40" height="30" alt="头像"
+                        class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 alignnone photo"/></span> <a
+                        class="hint--left hint--rounded" data-hint2="无"> <span class="comment-log"> 中秋节快乐qwq </span>
+                </a></li>
+                <li class="list-group-item"><span class="author-avatar"><img
+                        src="images/none.jpg" width="40" height="40" alt="头像"
+                        class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default"/></span> <a
+                        class="hint--left hint--rounded" data-hint2="无"> <span
+                        class="comment-log"> 中秋节快乐qwq </span> </a></li>
+                <li class="list-group-item"><span class="author-avatar"><img
+                        src="images/none.jpg" width="40" height="40" alt="头像"
+                        class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 alignnone photo"/></span> <a
+                        class="hint--left hint--rounded" data-hint2="无"> <span
+                        class="comment-log"> 中秋节快乐qwq </span> </a></li>
+                <li class="list-group-item"><span class="author-avatar"><img
+                        src="images/none.jpg" width="40" height="40" alt="头像"
+                        class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default"/></span> <a
+                        class="hint--left hint--rounded" data-hint2="无"> <span
+                        class="comment-log"> 中秋节快乐qwq </span> </a></li>
+            </ul>
+        </div>
+    </aside>
+    <aside id="zan_rand_posts-12">
+        <div class="panel panel2 panel-zan recent hidden-xs" aos="fade-up" aos-duration="2000">
+            <div class="panel-heading"><i class="fa fa-refresh"></i> 随机文章 <i
+                    class="fa fa-times-circle panel-remove"></i> <i class="fa fa-chevron-circle-up panel-toggle"></i>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span class="post-title"> <a
+                > 暂无标题 </a> </span> <span class="badge">35,814 ℃</span>
+                </li>
+                <li class="list-group-item"><span class="post-title"> <a
+                > 暂无标题 </a> </span> <span
+                        class="badge">296,555 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                > 暂无标题 </a> </span> <span
+                        class="badge">63,595 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                > 暂无标题 </a> </span> <span class="badge">30,523 ℃</span>
+                </li>
+                <li class="list-group-item"><span class="post-title"> <a
+                > 暂无标题 </a> </span> <span
+                        class="badge">335,271 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                > 暂无标题 </a> </span> <span
+                        class="badge">53,415 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                > 暂无标题 </a> </span> <span
+                        class="badge">60,100 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                > 暂无标题 </a> </span> <span
+                        class="badge">103,238 ℃</span></li>
+            </ul>
+        </div>
+    </aside>
+    <aside id="zan_hotest_posts-4">
+        <div class="panel panel2 panel-zan hot hidden-xs" aos="fade-up" aos-duration="2000">
+            <div class="panel-heading"><i class="fa fa-fire"></i> 最热文章 <i class="fa fa-times-circle panel-remove"></i>
+                <i class="fa fa-chevron-circle-up panel-toggle"></i></div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span class="post-title"> <a
+                        title="暂无标题"> 暂无标题 </a> </span>
+                    <span class="badge">817,057 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                        title="暂无标题"> 暂无标题 </a> </span>
+                    <span class="badge">695,677 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                        title="暂无标题"> 暂无标题 </a> </span>
+                    <span class="badge">599,195 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                        title="暂无标题"> 暂无标题 </a> </span>
+                    <span class="badge">580,671 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                        title="暂无标题"> 暂无标题 </a> </span> <span class="badge">568,155 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                        href="https://www.mmgal.com/zibimeimeidezhongshengdiaojiao.html"
+                        title="暂无标题"> 暂无标题 </a> </span> <span class="badge">567,554 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                        title="暂无标题"> 暂无标题 </a> </span>
+                    <span class="badge">554,626 ℃</span></li>
+                <li class="list-group-item"><span class="post-title"> <a
+                        title="暂无标题"> 暂无标题 </a> </span>
+                    <span class="badge">512,731 ℃</span></li>
+            </ul>
+        </div>
+    </aside>
+    <aside id="zan_sets-10">
+        <div class="panel panel-zan hidden-xs" aos="fade-up" aos-duration="2000">
+            <ul class="nav nav-pills pills-zan">
+                <li><a href="#sidebar-tags" data-toggle="tab">热门标签</a></li>
+                <li class="active"><a href="#sidebar-links" data-toggle="tab">友情链接</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags"><a
+                        class="tag-cloud-link tag-link-91 tag-link-position-1" style="font-size: 9.1020408163265pt;"
+                        aria-label="无 (5个项目)">无</a><a
+                        class="tag-cloud-link tag-link-96 tag-link-position-2" style="font-size: 8.6122448979592pt;"
+                        aria-label="无 (4个项目)">无</a><a
+                        class="tag-cloud-link tag-link-95 tag-link-position-3"
+                        style="font-size: 12.040816326531pt;"
+                        aria-label="无 (17个项目)">无</a><a
+                        class="tag-cloud-link tag-link-109 tag-link-position-4" style="font-size: 11.122448979592pt;"
+                        aria-label="无 (12个项目)">无</a><a
+                                                                           class="tag-cloud-link tag-link-98 tag-link-position-5"
+                                                                           style="font-size: 9.1020408163265pt;"
+                                                                           aria-label="无 (5个项目)">无</a><a
+                        class="tag-cloud-link tag-link-103 tag-link-position-6" style="font-size: 10.938775510204pt;"
+                        aria-label="无 (11个项目)">无</a><a
+                                                                             class="tag-cloud-link tag-link-108 tag-link-position-7"
+                                                                             style="font-size: 11.367346938776pt;"
+                                                                             aria-label="无 (13个项目)">无</a><a
+                        class="tag-cloud-link tag-link-68 tag-link-position-8"
+                        style="font-size: 14.244897959184pt;" aria-label="无 (41个项目)">无</a><a
+                        class="tag-cloud-link tag-link-97 tag-link-position-9"
+                        style="font-size: 11.122448979592pt;" aria-label="无 (12个项目)">无</a><a
+                        class="tag-cloud-link tag-link-93 tag-link-position-10" style="font-size: 12.408163265306pt;"
+                        aria-label="无 (20个项目)">无</a><a class="tag-cloud-link tag-link-61 tag-link-position-11"
+                                                                   style="font-size: 11.122448979592pt;"
+                                                                   aria-label="无 (12个项目)">无</a><a
+                        class="tag-cloud-link tag-link-82 tag-link-position-12" style="font-size: 12.65306122449pt;"
+                        aria-label="无 (22个项目)">无</a><a class="tag-cloud-link tag-link-111 tag-link-position-13"
+                                                         style="font-size: 10.69387755102pt;" aria-label="无 (10个项目)">无</a><a
+                        class="tag-cloud-link tag-link-87 tag-link-position-14" style="font-size: 10.142857142857pt;"
+                        aria-label="无 (8个项目)">无</a><a class="tag-cloud-link tag-link-73 tag-link-position-15"
+                                                        style="font-size: 12.285714285714pt;"
+                                                        aria-label="无 (19个项目)">无</a><a
+                        class="tag-cloud-link tag-link-84 tag-link-position-16" style="font-size: 13.938775510204pt;"
+                        aria-label="无 (36个项目)">无</a><a class="tag-cloud-link tag-link-85 tag-link-position-17"
+                                                         style="font-size: 10.448979591837pt;"
+                                                         aria-label="无 (9个项目)">无</a><a
+                        class="tag-cloud-link tag-link-72 tag-link-position-18" style="font-size: 12.530612244898pt;"
+                        aria-label="无 (21个项目)">无</a><a class="tag-cloud-link tag-link-90 tag-link-position-19"
+                                                         style="font-size: 16.387755102041pt;" aria-label="无 (93个项目)">无</a><a
+                        class="tag-cloud-link tag-link-92 tag-link-position-20" style="font-size: 8pt;"
+                        aria-label="无 (3个项目)">无</a><a class="tag-cloud-link tag-link-104 tag-link-position-21"
+                                                        style="font-size: 10.69387755102pt;" aria-label="无 (10个项目)">无</a><a
+                        class="tag-cloud-link tag-link-100 tag-link-position-22" style="font-size: 8.6122448979592pt;"
+                        aria-label="无 (4个项目)">无</a><a
+                        class="tag-cloud-link tag-link-99 tag-link-position-23" style="font-size: 10.142857142857pt;"
+                        aria-label="无 (8个项目)">无</a><a class="tag-cloud-link tag-link-60 tag-link-position-24"
+                                                            style="font-size: 11.857142857143pt;"
+                                                            aria-label="无 (16个项目)">无</a><a
+                        class="tag-cloud-link tag-link-74 tag-link-position-25" style="font-size: 11.551020408163pt;"
+                        aria-label="无 (14个项目)">无</a><a class="tag-cloud-link tag-link-55 tag-link-position-26"
+                                                         style="font-size: 20pt;" aria-label="无 (364个项目)">无</a><a
+                        class="tag-cloud-link tag-link-89 tag-link-position-27" style="font-size: 9.1020408163265pt;"
+                        aria-label="无 (5个项目)">无</a><a class="tag-cloud-link tag-link-102 tag-link-position-28"
+                                                        style="font-size: 10.448979591837pt;" aria-label="无 (9个项目)">无</a>
+                </div>
+                <div class="tab-pane active nav bs-sidenav fade in" id="sidebar-links">
+                    <li><a title="虚位以待" target="_blank">虚位以待</a></li>
+                    <li><a title="虚位以待" target="_blank">虚位以待</a></li>
+                    <li><a title="虚位以待" target="_blank">虚位以待</a></li>
+                </div>
+            </div>
+        </div>
+    </aside>
+</aside>
+</div> </div></div>
+<footer id="zan-footer">
+    <div class="container"> © 2019-2019 晨雨 .Powered by WordPress. Theme By 晨雨 | <a
+            target="_blank">服务器状态</a> | <a
+            target="_blank">Donate</a> | <a
+            target="_blank">站点地图</a>
+        <script>var _hmt = _hmt || [];
         (function () {
             var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?44f8fa2f0b239ea3093628142486b48a";
+            hm.src = "https://hm.baidu.com/hm.js?b56ec837e58dde2fb695a67d41f4f894";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-
-
-</head>
-<body>
-<!--<h2 style="color: red">这是晨雨的网站......建设中</h2>-->
-
-<div id="credits">
-    <h2 style="color: red">这是晨雨的网站</h2><br>
-    <hr>
-    <h3 style="color: #985f0d">网站的内容......待更新</h3><br>
-    <a href="http://anime.upupoo.com/" title="">看动漫</a>&nbsp;&nbsp;
-    <a href="http://4kbo.com/" title="">看电影</a>&nbsp;&nbsp;
-    <a href="https://www.bxwxorg.com/" title="">看小说</a>&nbsp;&nbsp;
-    <a href="https://wall.alphacoders.com/?lang=Chinese" title="">搜壁纸</a>&nbsp;&nbsp;
-    <a href="http://www.ypojie.com/" title="">搜软件</a>&nbsp;&nbsp;
-    <a href="https://www.doutula.com/article/list/" title="">斗图啦</a>&nbsp;&nbsp;
-    <a href="http://www.4399.com/" title="">玩游戏</a>&nbsp;&nbsp;
-    <a href="https://www.runoob.com/" title="">学编程</a>&nbsp;&nbsp;
-    <a href="https://leetcode-cn.com/problemset/all/" title="">刷力扣</a>
-    <!--  <div class = "socaial" style="margin-right:10px">Created by @Yasai</div>-->
-    <!--  <div class = "socaial" style="margin-right:10px; margin-bottom: -40px">©️All my products may be used in both personal and commercial projects   </div>-->
-    <!--  <div class="iconlink">-->
-    <!--    <span><a class="icon-weibo" href="https://weibo.com/psaiaevegas/profile?rightmod=1&amp;wvr=6&amp;mod=personnumber" target="_blank" data-icon=""></a></span>-->
-    <!--    <span><a class="icon-zhihu" href="https://www.zhihu.com/people/wang-ya-sai/activities" target="_blank" data-icon=""></a></span>-->
-    <!--    <span><a class="icon-instagram" href="http://instagram.com/yasaisai" target="_blank" data-icon=""></a></span>-->
-    <!--    <span><a class="icon-twitter" href="https://twitter.com/yasai_wang" target="_blank" data-icon=""></a></span>-->
-    <!--  </div>-->
-    
-</div>
-
-<!--右侧栏-->
-<div class="home-right-bar">
-    <div class="bar-sort1">
-        <a id="APP" href="javascript:void(0);"><i class="iconfont">&#xe617;</i>赞助一下
-            <div id="shaoma" class="pop-content"><img src="image/二维码.png" alt="无法显示图片">
-                <br>手机扫一扫<br>生活没烦恼
-            </div>
-        </a>
+        })();</script>
+        <script>(function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();</script>
     </div>
-    <!--    <div class="bar-sort2">-->
-    <!--        <a href="javascript:void(0);"><i class="iconfont">&#xe60d;</i>个人中心</a>-->
-    <!--    </div>-->
-    <!--    <div class="bar-sort1">-->
-    <!--        <a href="javascript:void(0);"><i class="iconfont">&#xe61d;</i>售后服务</a>-->
-    <!--    </div>-->
-    <!--    <div class="bar-sort2">-->
-    <!--        <a href="javascript:void(0);"><i class="iconfont">&#xe687;</i>人工客服</a>-->
-    <!--    </div>-->
-    <!--    <div class="bar-sort1">-->
-    <!--        <a href="javascript:void(0);"><i class="iconfont">&#xe600;</i>购物车</a>-->
-    <!--    </div>-->
-    <div id="ding" class="bar-sort3">
-        <a href="#"><i class="iconfont">&#xe675;</i>回到顶部</a>
-    </div>
-</div>
+</footer>
+<div id="zan-gotop"><i class="fa fa-angle-up"></i></div>
+<!--<div class='advanced-browser-check' style='display:none;'-->
+<!--     data-url='{"abc_url":"https:\/\/www.mmgal.com\/wp-admin\/admin-ajax.php"}'></div>-->
+<link rel='stylesheet' id='content-protector_css-css'
+      href='css/content-protector.css?ver=17.8' type='text/css' media='all'/>
+<script type="text/javascript" src="js/myblog_bd.js?ver=1.0.3"></script>
+<script type="text/javascript" src="js/myblog_min.js?ver=1.1.1"></script>
+<script type="text/javascript">var smiley = jQuery("#smilelink");
+clone = smiley.clone();
+comment = jQuery("#comment");
+smiley.remove();
+comment.before(smiley);
 
-<script src="js/jquery.js"></script>
-<script src="js/index.js"></script>
-<script type="text/javascript">
-
-    var type;
-    var options = {
-        Background: '#0A0A0A',
-        Color1: '#FF3054',
-        Color2: '#4614E9',
-        Range: 50,
-        Speed: 15,
-        Counts: 1000,
-        Size: 5,
-        Direction: 'Center',
-
-
-        Random: function () {
-            var Color1 = random(['#3370ff', '#ff3389', '#27ff6e', '#27f7ff']);
-            color1Control.setValue(Color1);
-
-            var Color2 = random(['#3370ff', '#ff3389', '#27ff6e', '#27f7ff']);
-            color2Control.setValue(Color2);
-
-            var speed = random(10, 20);
-            speedControl.setValue(speed);
-
-            var range = random(100);
-            RangeControl.setValue(range);
-
-            var points = random(300, 2000);
-            PointsControl.setValue(points);
-
-            var Size = random(1, 10);
-            SizeControl.setValue(Size);
-
-            var Direction = random(['Center', 'Left', 'Right', 'Up', 'Down']);
-            DirControl.setValue(Direction);
-
-        },
-        Save: function () {
-            saveFrames("Star-Emission", "png", 1, 1);
-        }
-
+function grin(a) {
+    var b;
+    a = ' ' + a + ' ';
+    if (document.getElementById('comment') && document.getElementById('comment').type == 'textarea') {
+        b = document.getElementById('comment')
+    } else {
+        return false
     }
-
-    var text, gui, config, BgControl, BgColor, color1Control, color2Control, speedControl, PointsControl, RangeControl,
-        SizeControl, DirControl, RangeControl;
-    window.onload = function () {
-        gui = new dat.GUI();
-
-        //folder1
-        var folder1 = gui.addFolder('Controls');
-
-        BgControl = folder1.addColor(options, 'Background');
-        BgControl.onChange(draw);
-
-        color1Control = folder1.addColor(options, 'Color1');
-        color1Control.onChange(draw);
-
-        color2Control = folder1.addColor(options, 'Color2');
-        color2Control.onChange(draw);
-
-        RangeControl = folder1.add(options, 'Range', 0, 400);
-        RangeControl.onChange(draw);
-
-        speedControl = folder1.add(options, 'Speed', 10, 40);
-        speedControl.onChange(setup);
-
-        PointsControl = folder1.add(options, 'Counts', 100, 4000);
-        PointsControl.onChange(setup);
-
-        SizeControl = folder1.add(options, 'Size', 2, 10);
-        SizeControl.onChange(setup);
-
-        DirControl = folder1.add(options, 'Direction', ['Center', 'Left', 'Right', 'Up', 'Down']);
-        DirControl.onChange(setup);
-
-        var RandomControl = folder1.add(options, 'Random');
-
-        var SaveControl = folder1.add(options, 'Save');
-
-        folder1.open();
-
-    };
-
-
-    //rgb to hex颜色转换
-    function componentToHex(c) {
-        var hex = c.toString(16);
-        return hex.length == 1 ? "0" + hex : hex;
+    if (document.selection) {
+        b.focus();
+        sel = document.selection.createRange();
+        sel.text = a;
+        b.focus()
+    } else if (b.selectionStart || b.selectionStart == '0') {
+        var c = b.selectionStart;
+        var d = b.selectionEnd;
+        var e = d;
+        b.value = b.value.substring(0, c) + a + b.value.substring(d, b.value.length);
+        e += a.length;
+        b.focus();
+        b.selectionStart = e;
+        b.selectionEnd = e
+    } else {
+        b.value += a;
+        b.focus()
     }
-
-    function rgbToHex(r, g, b) {
-        return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-    }
-
-
-</script>
-
-<script type="text/javascript" src="js/sketch.js"></script>
-<script>
-    setTimeout(function () {
-        // console.log($('#defaultCanvas0').height());
-        let h = $('#defaultCanvas0').height()+'px';
-        $('#credits').append('<div style="height: 3000px"><h2 style="color: red;margin-top: '+h+'">期待下次更新......</h2></div>');
-    }, 1000);
-</script>
-</body>
-
-</html>
-
+}</script>
+</body></html>
